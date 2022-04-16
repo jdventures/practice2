@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+:root {
+--Orange: hsl(25, 97%, 53%);
+/* Neutral */
+--White: hsl(0, 0%, 100%);
+--Light-Grey: hsl(217, 12%, 63%);
+--Medium-Grey: hsl(216, 12%, 54%);
+--Dark-Blue: hsl(213, 25%, 18%);
+--Very-Dark-Blue: hsl(216, 19%, 11%);
+/* - Font size (paragraph): 15px */
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    display: flex;
+    max-width: 375px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 100vh;
+    background-color: black;
+    
+}
+
+.container {
+    display: block;
+    width: 360px;
+    height: 430px;
+    background-color: var(--Very-Dark-Blue);
+    padding: 30px;
+    border-radius: 20px;
+}
+.container img {
+    padding: 14px;
+    background-color: var(--Dark-Blue);
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.container h1 {
+    color: var(--White);
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+.container p {
+    font-size: 15px;
+    color: var(--Light-Grey);
+    line-height: 1.2rem;
+    margin-bottom: 25px;
+}
+.rating button.btn {
+    background-color: var(--Dark-Blue);
+    width: 50px;
+    height: 50px;
+    padding: 6px;
+    border: none;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    margin: 2px;
+    color: var(--Light-Grey);
+    outline: none;
+}
+.btn:hover {
+    cursor: pointer;
+}
+button.submit {
+    outline: none;
+    width: 300px;
+    height: 55px;
+    border-radius: 40px;
+    margin-top: 30px;
+    background-color: var(--Orange);
+    color: var(--White);
+    letter-spacing: 2px;
+    
+}
+button.submit:hover {
+    color:var(--Orange);
+    background-color: aliceblue;
+}
+.thank-you {
+    display: none;
+    color: aliceblue;
+    text-align: center;
+    padding: 30px;
+    background-color: var(--Very-Dark-Blue);
+    border-radius: 20px;
+}
+.thank-you img {
+    margin-bottom: 30px;
+}
+.thank-you .thanks {
+    width: 220px;
+    background-color: var(--Dark-Blue);
+    padding: 10px;
+    border-radius: 35px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: var(--Orange);
+    font-size: 18px;
+    margin: 0 auto;  
+    
+}
+.thank-you h2 {
+    margin-top: 30px;
+    margin-bottom: 20px;    
+  
+}
+.thank-you p {
+    color: var(--Light-Grey);   
+    font-size: 16px; 
+    line-height: 1.2rem;
+  
+}
