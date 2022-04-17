@@ -52,7 +52,7 @@ body {
     line-height: 1.2rem;
     margin-bottom: 25px;
 }
-.rating button.btn {
+.rating button {
     background-color: var(--Dark-Blue);
     width: 50px;
     height: 50px;
@@ -63,9 +63,27 @@ body {
     margin: 2px;
     color: var(--Light-Grey);
     outline: none;
-}
-.btn:hover {
     cursor: pointer;
+}
+.rating button.btn {
+    background-color: var(--Light-Grey);
+    width: 50px;
+    height: 50px;
+    padding: 6px;
+    border: none;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    margin: 2px;
+    color: var(--Dark-Blue);
+    outline: none;
+}
+.rating button:hover {
+    cursor: pointer;
+    background-color: antiquewhite;
+}
+button.btn:hover {
+    cursor: pointer;
+    background-color: antiquewhite;
 }
 button.submit {
     outline: none;

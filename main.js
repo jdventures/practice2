@@ -2,14 +2,21 @@
 const submit = document.querySelector('.submit');
 const container = document.querySelector('.container');
 const thankYou = document.querySelector('.thank-you');
-// const btn1 = document.querySelector('.btn-1');
-// const btn2 = document.querySelector('.btn-2');
+const btn = document.querySelectorAll('#btn');
 
-// console.log(btn);
+console.log(btn[0]);
+btn.forEach((bn) => {
+    bn.addEventListener('click', () => {
+        removeActiveClasses();
+        bn.classList.add('btn');
+    })
+})
+function removeActiveClasses() {
+    btn.forEach(bn => {
+        bn.classList.remove('btn');
+    })
+}
 
-// btn.addEventListener('mouseover', () => {
-
-// })
 
 submit.addEventListener('click', () => {
     container.style.display = 'none';
@@ -17,3 +24,4 @@ submit.addEventListener('click', () => {
     console.log('dave i love you');
 
 })
+
